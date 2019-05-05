@@ -34,7 +34,7 @@ class Recipes{
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                for index in 0...20{
+                for index in 0...30{
                     let id = json["results"][index]["id"].intValue
                     let title = json["results"][index]["title"].stringValue
                     let imageURL = json["results"][index]["image"].stringValue

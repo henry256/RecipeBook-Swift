@@ -49,7 +49,8 @@ class ViewController: UIViewController{
             
         }
         if segue.identifier == "searchPressed"{
-            let destination = segue.destination as! RecipeSearchResultsViewController
+            let destination = segue.destination as!RecipeSearchResultsViewController
+            inputString = userInput.text ?? "anything"
             destination.userInputString = inputString
     
     
